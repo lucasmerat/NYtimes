@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NY Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Martel+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron bg-theme">
+            <h1 class="display-5 text-center"><i class="fas fa-newspaper"></i> New York Times Search</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <b><i class="fas fa-list-alt"></i> Search Parameters</b>
+                </div>
+                <form class="p-4">
+                    <div class="form-group">
+                        <label for="searchTerm">Search Term:</label>
+                        <input type="text" class="form-control" id="searchTerm" placeholder="Example: Why is the gov't shutdown?">
+                    </div>
+                    <div class="form-group">
+                        <label for="numRecords">Number of Records to Retrieve:</label>
+                        <input type="text" class="form-control" id="numRecords" placeholder="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="yearStart">Start Year (Optional):</label>
+                        <input type="text" class="form-control" id="yearStart" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="yearEnd">End Year (Optional):</label>
+                        <input type="text" class="form-control" id="yearEnd" placeholder="">
+                    </div>
+                </form>
+                <div class="actions">
+                    <span id="search"><i class="fas fa-search"> Search</i></span>
+                    <span id="clear"><i class="fas fa-trash-alt"> Clear Results</i></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row mt-4">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <b><i class="fas fa-list-alt"></i> Top Articles</b>
+                </div>
+                <div id="articles">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2">
+        <div class="container text-center">
+            <hr class="my-4">
+            Made with lots of &hearts;
+        </div>
+    </div>
+    <!-- begin js files -->
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- end js files -->
+</body>
